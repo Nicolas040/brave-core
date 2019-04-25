@@ -147,12 +147,17 @@ window.cr.define('brave_rewards', function () {
     getActions().onAddressesForPaymentId(addresses)
   }
 
-  function confirmationsHistory (totalPages: number, estimatedEarnings: number) {
-    getActions().onConfirmationsHistory(totalPages, estimatedEarnings)
+  function transactionHistoryForThisCycle (totalPages: number, estimatedEarnings: number) {
+    getActions().onTransactionHistoryForThisCycle(totalPages, estimatedEarnings)
   }
 
+<<<<<<< HEAD
   function confirmationsHistoryChanged () {
     getActions().onConfirmationsHistoryChanged()
+=======
+  function transactionHistoryForThisCycleChanged () {
+    getActions().onTransactionHistoryForThisCycleChanged()
+>>>>>>> e6d0a3fcb... Fix the Ad Rewards settings panel
   }
 
   return {
@@ -181,8 +186,8 @@ window.cr.define('brave_rewards', function () {
     onPendingContributionSaved,
     rewardsEnabled,
     addressesForPaymentId,
-    confirmationsHistory,
-    confirmationsHistoryChanged
+    transactionHistoryForThisCycle,
+    transactionHistoryForThisCycleChanged
   }
 })
 
