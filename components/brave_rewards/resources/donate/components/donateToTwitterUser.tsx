@@ -42,7 +42,7 @@ class DonateToTwitterUser extends React.Component<Props, {}> {
       <>
         {
           !finished && !error
-          ? <Banner publisher={publisher} />
+          ? <Banner publisher={publisher} tweetMetaData={tweetMetaData} />
           : null
         }
         {
